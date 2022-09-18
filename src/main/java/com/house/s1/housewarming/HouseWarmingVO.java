@@ -1,11 +1,12 @@
 package com.house.s1.housewarming;
 
+import com.house.s1.board.BoardVO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class HouseWarmingVO {
+public class HouseWarmingVO extends BoardVO {
 
     private Integer house_type; // 주거형태 1:본인방,2:원룸 3:오피스텔 4:빌라&연립 5:아파트 6:단독주택
     private Integer family_type; //가족형태 1:싱글라이프 2:신혼/부부 3:자녀가있는집 4:부모님과함께 5:룸메이트와함께 6:기타
